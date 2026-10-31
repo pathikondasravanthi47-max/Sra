@@ -1,0 +1,27 @@
+File1:Calculator.java
+
+package mypack;
+
+public class Calculator {
+    public void display() {
+        int a = 10;
+        int b = 20;
+
+        System.out.println("Addition = " + (a + b));
+        System.out.println("Subtraction = " + (a - b));
+        System.out.println("Multiplication = " + (a * b));
+    }
+}
+File 2: TestPackage.java
+
+import mypack.Calculator;
+
+public class TestPackage {
+    public static void main(String[] args) {
+
+        Calculator obj = new Calculator();
+
+        System.out.println("Using User Defined Package");
+        obj.display();
+    }
+}
